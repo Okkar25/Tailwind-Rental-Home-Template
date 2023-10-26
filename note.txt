@@ -1,0 +1,8 @@
+npx tailwindcss -i ./input.css -o ./dist/output.css --watch 
+
+
+
+
+text-[12px] sm:text-sm px-1 sm:px-3 py-1 sm:pb-1
+
+text-[12px] sm:text-sm

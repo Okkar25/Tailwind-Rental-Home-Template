@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 65</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <section
+      class="container min-h-screen mx-auto px-3 sm:px-3 md:px-3 xl:px-20 py-10"
+    >
+      <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+        <div class="mb-3 col-span-full mx-auto lg:mx-0">
+          <h1
+            class="font-bold text-2xl sm:text-2xl md:text-2xl lg:text-3xl font-mono"
+          >
+            Discover Latest Properties
+          </h1>
+          <p class="text-md text-neutral-500 font-sans text-base">
+            Newest Properties Around You
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-img relative">
+            <!-- inner icons -->
+            <div class="card-img-top flex justify-between absolute w-full p-3">
+              <div class="flex items-start gap-1 sm:gap-2">
+                <a
+                  class="bg-white text-slate-600 duration-300 text-[11px] sm:text-sm font-semibold px-2 sm:px-3 rounded-full py-1 sm:pb-1 hover:bg-slate-900 hover:text-white"
+                  href="#"
+                  >For Sale</a
+                >
+                <div
+                  class="bg-blue-400 text-white text-[11px] sm:text-sm font-semibold px-2 sm:px-3 rounded-full py-1 sm:pb-1"
+                >
+                  Featured
+                </div>
+                <div
+                  class="bg-orange-500 text-white text-[11px] sm:text-sm font-semibold px-2 sm:px-3 rounded-full py-1 sm:pb-1"
+                >
+                  Hot
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+                    />
+                  </svg>
+                  6
+                  <!-- <span class="text-sm text-blue-400">6</span> -->
+                </a>
+
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                    />
+                  </svg>
+
+                  1
+                  <!-- <span class="text-sm text-blue-400">1</span> -->
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="card-img-bottom flex justify-end gap-3 absolute bottom-0 w-full p-3"
+            >
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500 fill-blue-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <img
+              src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/architecture-home-merrick-way-488x326.jpg"
+              alt=""
+              class="rounded-xl"
+            />
+          </div>
+
+          <div class="card-body flex flex-col gap-3">
+            <a
+              href="#"
+              class="block text-lg mt-5 text-slate-600 font-bold hover:text-blue-500 w-fit duration-500"
+              >Home in Merrick Way</a
+            >
+            <a href="#" class="flex items-center w-fit duration-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 stroke-blue-500 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-cyan-200"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-blue-500"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <span
+                class="text-neutral-400 hover:text-blue-500 ms-1 font-semibold"
+                >Merrick Way, Miami, FL 33134, USA</span
+              >
+            </a>
+            <a
+              href="#"
+              class="block text-neutral-600 hover:text-blue-500 w-fit duration-500 font-semibold"
+              >Single Family</a
+            >
+
+            <div class="flex justify-between">
+              <p class="text-slate-600 font-semibold font-sans text-xl">
+                $<span>540,000</span>
+              </p>
+
+              <div class="flex gap-3">
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">3</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M64,236a12,12,0,1,1-12-12A12,12,0,0,1,64,236Zm20-44a12,12,0,1,0,12,12A12,12,0,0,0,84,192Zm-64,0a12,12,0,1,0,12,12A12,12,0,0,0,20,192Zm32-32a12,12,0,1,0,12,12A12,12,0,0,0,52,160ZM256,40a8,8,0,0,1-8,8H219.31L191.46,75.86,169.8,202.65a16,16,0,0,1-27.09,8.66l-98-98a16,16,0,0,1,8.69-27.1L180.14,64.54,208,36.69A15.86,15.86,0,0,1,219.31,32H248A8,8,0,0,1,256,40ZM174.21,81.79,56,102l98,98Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">3</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 stroke-blue-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                    />
+                  </svg>
+
+                  <div class="text-slate-500 font-semibold">
+                    4300
+                    <span class="text-neutral-400 font-semibold"> sq ft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img relative">
+            <!-- inner icons -->
+            <div class="card-img-top flex justify-between absolute w-full p-3">
+              <div class="flex gap-1 sm:gap-2">
+                <a
+                  class="bg-white text-slate-600 duration-300 font-semibold text-[11px] sm:text-sm px-2 sm:px-3 py-1 sm:pb-1 rounded-full hover:bg-slate-900 hover:text-white"
+                  href="#"
+                  >For Sale</a
+                >
+                <div
+                  class="bg-blue-400 text-white text-[11px] sm:text-sm font-semibold px-2 sm:px-3 rounded-full py-1 sm:pb-1"
+                >
+                  Featured
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+                    />
+                  </svg>
+                  4
+                  <!-- <span class="text-sm text-blue-400">6</span> -->
+                </a>
+
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                    />
+                  </svg>
+
+                  1
+                  <!-- <span class="text-sm text-blue-400">1</span> -->
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="card-img-bottom flex justify-end gap-3 absolute bottom-0 w-full p-3"
+            >
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500 fill-blue-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <img
+              src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/property-2-488x326.jpg"
+              alt=""
+              class="rounded-xl"
+            />
+          </div>
+
+          <div class="card-body flex flex-col gap-3">
+            <a
+              href="#"
+              class="block text-lg mt-5 text-slate-600 font-bold hover:text-blue-500 w-fit duration-500"
+              >Villa in Coral Gables</a
+            >
+            <a href="#" class="flex items-center w-fit duration-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 stroke-blue-500 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-cyan-200"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-blue-500"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <span
+                class="text-neutral-400 hover:text-blue-500 ms-1 font-semibold"
+              >
+                Deering Bay Drive, Coral Gables, FL 33158, USA
+              </span>
+            </a>
+            <a
+              href="#"
+              class="block text-neutral-600 hover:text-blue-500 w-fit duration-500 font-semibold"
+              >Villa</a
+            >
+
+            <div class="flex justify-between">
+              <p class="text-slate-600 font-semibold font-sans text-xl">
+                $<span>825,000</span>
+              </p>
+
+              <div class="flex gap-3">
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">3</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M64,236a12,12,0,1,1-12-12A12,12,0,0,1,64,236Zm20-44a12,12,0,1,0,12,12A12,12,0,0,0,84,192Zm-64,0a12,12,0,1,0,12,12A12,12,0,0,0,20,192Zm32-32a12,12,0,1,0,12,12A12,12,0,0,0,52,160ZM256,40a8,8,0,0,1-8,8H219.31L191.46,75.86,169.8,202.65a16,16,0,0,1-27.09,8.66l-98-98a16,16,0,0,1,8.69-27.1L180.14,64.54,208,36.69A15.86,15.86,0,0,1,219.31,32H248A8,8,0,0,1,256,40ZM174.21,81.79,56,102l98,98Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">3.5</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 stroke-blue-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                    />
+                  </svg>
+
+                  <div class="text-slate-500 font-semibold">
+                    3500
+                    <span class="text-neutral-400 font-semibold"> sq ft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img relative">
+            <!-- inner icons -->
+            <div class="card-img-top flex justify-between absolute w-full p-3">
+              <div class="flex gap-1 sm:gap-2">
+                <a
+                  class="bg-white text-slate-600 duration-300 text-[11px] sm:text-sm px-2 sm:px-3 py-1 sm:pb-1 font-semibold rounded-full hover:bg-slate-900 hover:text-white"
+                  href="#"
+                  >For Sale</a
+                >
+                <div
+                  class="bg-blue-400 text-white text-[11px] sm:text-sm px-2 sm:px-3 py-1 sm:pb-1 font-semibold rounded-full"
+                >
+                  Featured
+                </div>
+                <div
+                  class="bg-orange-500 text-white text-[11px] sm:text-sm px-2 sm:px-3 py-1 sm:pb-1 font-semibold rounded-full"
+                >
+                  Hot
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+                    />
+                  </svg>
+                  8
+                  <!-- <span class="text-sm text-blue-400">6</span> -->
+                </a>
+
+                <a
+                  class="bg-white text-blue-400 duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold px-3 rounded-full hover:bg-blue-400 hover:text-white"
+                  href="#"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                    />
+                  </svg>
+
+                  1
+                  <!-- <span class="text-sm text-blue-400">1</span> -->
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="card-img-bottom flex justify-end gap-3 absolute bottom-0 w-full p-3"
+            >
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500 fill-blue-50"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                  />
+                </svg>
+              </div>
+
+              <div class="bg-white rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 sm:w-5 sm:h-5 stroke-blue-500"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <img
+              src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/property-3-488x326.jpg"
+              alt=""
+              class="rounded-xl"
+            />
+          </div>
+
+          <div class="card-body flex flex-col gap-3">
+            <a
+              href="#"
+              class="block text-lg mt-5 text-slate-600 font-bold hover:text-blue-500 w-fit duration-500"
+              >Villa on Hollywood Boulevard</a
+            >
+            <a href="#" class="flex items-center w-fit duration-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5 stroke-blue-500 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-cyan-200"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="fill-blue-500"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+
+              <span
+                class="text-neutral-400 hover:text-blue-500 ms-1 font-semibold"
+              >
+                Hatteras Lane, Hollywood, FL 33019, USA
+              </span>
+            </a>
+            <a
+              href="#"
+              class="block text-neutral-600 hover:text-blue-500 w-fit duration-500 font-semibold"
+              >Shop</a
+            >
+
+            <div class="flex justify-between">
+              <p class="text-slate-600 font-semibold font-sans text-xl">
+                $<span>740,000</span>
+              </p>
+
+              <div class="flex gap-3">
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">3</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    class="fill-blue-500"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M64,236a12,12,0,1,1-12-12A12,12,0,0,1,64,236Zm20-44a12,12,0,1,0,12,12A12,12,0,0,0,84,192Zm-64,0a12,12,0,1,0,12,12A12,12,0,0,0,20,192Zm32-32a12,12,0,1,0,12,12A12,12,0,0,0,52,160ZM256,40a8,8,0,0,1-8,8H219.31L191.46,75.86,169.8,202.65a16,16,0,0,1-27.09,8.66l-98-98a16,16,0,0,1,8.69-27.1L180.14,64.54,208,36.69A15.86,15.86,0,0,1,219.31,32H248A8,8,0,0,1,256,40ZM174.21,81.79,56,102l98,98Z"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-500 font-semibold">4</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 stroke-blue-500"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                    />
+                  </svg>
+
+                  <div class="text-slate-500 font-semibold">
+                    4530
+                    <span class="text-neutral-400 font-semibold"> sq ft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-cyan-100/50 min-h-screen flex items-center justify-center py-10"
+    >
+      <div class="container mx-auto px-3 sm:px-10 lg:px-40">
+        <div class="grid gap-10 grid-cols-1 lg:grid-cols-12">
+          <div class="slider col-span-1 sm:col-span-7">
+            <div class="card-img relative flex flex-col items-center">
+              <div class="card-img-top absolute top-5 left-5">
+                <img
+                  src="https://ultra-realhomes.b-cdn.net/wp-content/plugins/realhomes-elementor-addon//assets/images/map-featured.png"
+                  class="w-32 h-20"
+                />
+              </div>
+
+              <div
+                class="card-img-below flex justify-between items-center w-full absolute bottom-8 p-7"
+              >
+                <div class="flex gap-3 items-center">
+                  <a
+                    class="bg-black text-white duration-300 flex items-center gap-1 text-[12px] sm:text-md font-semibold p-2 rounded-full hover:bg-blue-400 hover:text-white"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+                      />
+                    </svg>
+                    <!-- <span class="text-sm text-blue-400">6</span> -->
+                  </a>
+                  <span class="text-sm font-semibold text-white">4</span>
+
+                  <a
+                    class="bg-black text-white duration-300 flex items-center gap-1 text-[12px] sm:text-sm font-semibold p-2 rounded-full hover:bg-blue-400 hover:text-white"
+                    href="#"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+                    <!-- <span class="text-sm text-blue-400">1</span> -->
+                  </a>
+                  <span class="text-sm font-semibold text-white">1</span>
+                </div>
+
+                <div class="flex gap-4">
+                  <div
+                    class="bg-black rounded-full p-2 duration-300 hover:bg-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-5 h-5 sm:w-5 sm:h-5 stroke-white fill-slate-500 hover:stroke-slate-500"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="bg-black rounded-full p-2 duration-300 hover:bg-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 sm:w-5 sm:h-5 stroke-white hover:stroke-slate-600"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/06/House-Design-1024x595.jpg"
+                class="w-full rounded-xl"
+              />
+
+              <div class="control flex gap-5 items-center -translate-y-1/2">
+                <button
+                  class="bg-black p-3 text-white rounded-full duration-300 hover:bg-blue-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-3 h-3 fill-white rotate-180"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="bg-white py-2 px-8 rounded-full shadow-md flex items-center gap-3"
+                >
+                  <button
+                    class="bg-blue-100 w-3 h-3 border-white border-2 rounded-full"
+                  ></button>
+                  <button
+                    class="bg-blue-100 w-3 h-3 border-white border-2 rounded-full"
+                  ></button>
+                  <button
+                    class="bg-blue-100 w-3 h-3 border-white border-2 rounded-full"
+                  ></button>
+                  <button
+                    class="bg-blue-400 w-3 h-3 border-white border-2 outline outline-2 outline-blue-600 rounded-full"
+                  ></button>
+                </div>
+
+                <button
+                  class="bg-black text-white rounded-full duration-300 p-3 hover:bg-blue-400"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-3 h-3 fill-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="select-box flex justify-center sm:flex sm:justify-start gap-5 mt-3"
+            >
+              <div class="flex gap-5">
+                <img
+                  src="https://sample.realhomes.io/single-property-02/wp-content/uploads/sites/3/2021/10/jeremy-bezanger-v4IJJu1Qa0U-unsplash.jpg"
+                  alt=""
+                  class="h-16 sm:h-20 md:h-24 lg:h-28 rounded-xl"
+                />
+                <img
+                  src="https://ultra-vacation-rentals.b-cdn.net/wp-content/uploads/sites/9/2020/11/bedroom-02-488x326.jpg"
+                  alt=""
+                  class="h-16 sm:h-20 md:h-24 lg:h-28 rounded-xl"
+                />
+                <img
+                  src="https://ultra-vacation-rentals.b-cdn.net/wp-content/uploads/sites/9/2020/10/apartment-05-488x326.jpg"
+                  alt=""
+                  class="h-16 sm:h-20 md:h-24 lg:h-28 rounded-xl"
+                />
+              </div>
+
+              <div
+                class="h-16 sm:h-20 md:h-24 lg:h-28 p-3 bg-white shadow-md hidden sm:flex sm:flex-col items-center gap-2 rounded-xl"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22px"
+                  height="22px"
+                  viewBox="0 0 24 24"
+                  version="1.1"
+                  class="sm:block"
+                >
+                  <g id="surface1">
+                    <path
+                      style="
+                        stroke: none;
+                        fill-rule: nonzero;
+                        fill: rgb(0%, 0%, 0%);
+                        fill-opacity: 1;
+                      "
+                      d="M 4.9375 12.234375 L 4.9375 23.238281 L 18.859375 23.238281 L 18.859375 12.234375 L 11.898438 6.398438 Z M 11.167969 19.863281 L 8.3125 19.863281 L 8.3125 17.007812 L 11.167969 17.007812 Z M 11.167969 15.546875 L 8.3125 15.546875 L 8.3125 12.691406 L 11.167969 12.691406 Z M 12.628906 12.691406 L 15.484375 12.691406 L 15.484375 15.546875 L 12.628906 15.546875 Z M 12.628906 17.003906 L 15.484375 17.003906 L 15.484375 19.863281 L 12.628906 19.863281 Z M 12.628906 17.003906 "
+                    ></path>
+                    <path
+                      style="
+                        stroke: none;
+                        fill-rule: nonzero;
+                        fill: rgb(0%, 0%, 0%);
+                        fill-opacity: 1;
+                      "
+                      d="M 23.277344 9.65625 L 12.835938 0.902344 C 12.292969 0.449219 11.503906 0.449219 10.960938 0.902344 L 0.519531 9.65625 C -0.09375 10.171875 -0.175781 11.09375 0.339844 11.710938 C 0.628906 12.054688 1.042969 12.234375 1.460938 12.234375 C 1.789062 12.234375 2.125 12.121094 2.398438 11.890625 L 11.898438 3.925781 L 21.402344 11.890625 C 22.023438 12.414062 22.941406 12.328125 23.457031 11.710938 C 23.976562 11.09375 23.894531 10.171875 23.277344 9.65625 Z M 23.277344 9.65625 "
+                    ></path>
+                  </g>
+                </svg>
+
+                <p class="text-xl font-bold">4</p>
+                <p
+                  class="text-sm font-semibold text-neutral-600 hidden lg:block"
+                >
+                  Properties
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info col-span-1 sm:col-span-5">
+            <div class="">
+              <div class="badges flex justify-between mx-5 sm:mx-0">
+                <div class="flex items-start gap-3">
+                  <a
+                    class="bg-white shadow-md text-slate-600 duration-300 text-[14px] font-semibold px-3 rounded-full hover:bg-slate-900 hover:text-white"
+                    href="#"
+                    >For Rent</a
+                  >
+                  <p
+                    class="bg-blue-400 text-white select-none text-[14px] font-semibold px-3 rounded-full"
+                    href="#"
+                  >
+                    Featured
+                  </p>
+                </div>
+
+                <p
+                  class="text-[14px] font-semibold text-slate-700 ms-3 sm:ms-0 select-none"
+                >
+                  Build 2018
+                </p>
+              </div>
+
+              <div class="address-info my-7">
+                <a
+                  href="#"
+                  class="block text-2xl px-10 sm:px-0 sm:text-4xl my-5 text-slate-900 font-semibold font-sans hover:text-blue-500 w-fit duration-300"
+                  >Villa on Grand Avenue</a
+                >
+                <a
+                  href="#"
+                  class="flex items-center w-fit duration-500 px-5 sm:px-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 stroke-blue-500 stroke-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="fill-cyan-200"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="fill-blue-500"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+
+                  <span
+                    class="text-neutral-500 hover:text-blue-500 duration-300 text-xs sm:text-sm ms-2 font-semibold"
+                  >
+                    CocoWalk, 3015 Grand Avenue, Miami, USA
+                  </span>
+                </a>
+              </div>
+
+              <div class="white-blocks flex justify-between sm:-translate-x-20">
+                <div class="flex gap-2 sm:gap-6 px-7 sm:px-0">
+                  <div
+                    class="p-3 sm:p-8 bg-white shadow-md flex flex-col justify-center items-center gap-3 rounded-lg"
+                  >
+                    <div class="flex items-center gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        class="fill-blue-400"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M2.6 23c-0.6 0-1-0.2-1.3-0.6C1 22.1 0.9 21.7 1 21.3L2.2 9.9C2.3 9.5 3.1 9 3.9 9h16.1c0.9 0 1.6 0.5 1.7 0.9L23 21.2c0.1 0.5 0 0.9-0.3 1.2 -0.3 0.4-0.8 0.6-1.3 0.6H2.6zM14.9 5c-0.5 0-0.8-0.1-0.9-0.3 0-0.1 0-0.2 0-0.2l0-3.3C14.2 1.1 14.6 1 15.6 1h3.9c0.7 0 1.2 0.4 1.2 0.5L21 4.6l0 0.1C20.9 4.9 20.5 5 20.1 5H14.9zM3.9 5C3.5 5 3.1 4.9 3 4.7c0 0 0-0.1 0-0.1l0.4-3.1C3.4 1.4 3.9 1 4.6 1h3.9c1 0 1.4 0.1 1.6 0.2l0 3.2C9.7 4.7 8.8 5 8.1 5H3.9z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.4 2c0.1 0 0.2 0 0.3 0l0.2 2H15l0-2c0.2 0 0.3 0 0.6 0H19.4M8.4 2C8.7 2 8.9 2 9 2l0 1.8C8.7 3.9 8.4 4 8.1 4h-4l0.2-2c0.1 0 0.2 0 0.3 0H8.4M20.1 10c0.3 0 0.6 0.1 0.7 0.2L22 21.3c0 0 0 0.1 0 0.1 0 0.2 0 0.3-0.1 0.3 -0.1 0.1-0.3 0.2-0.6 0.2H2.6c-0.3 0-0.5-0.1-0.6-0.2C2 21.7 2 21.7 2 21.5c0 0 0-0.1 0-0.1l1.2-11.1C3.3 10.1 3.6 10 3.9 10H20.1M19.4 0h-3.9C14.5 0 13 0.1 13 1l0 3.5C12.8 5.3 13.7 6 14.9 6h5.2c1.2 0 2.1-0.7 1.9-1.5l-0.4-3.1C21.5 0.6 20.5 0 19.4 0L19.4 0zM8.4 0H4.6C3.5 0 2.5 0.6 2.4 1.3L2 4.5C1.9 5.3 2.7 6 3.9 6h4.2c1.2 0 3.1-0.7 2.9-1.5L11 1C11 0.1 9.5 0 8.4 0L8.4 0zM20.1 8H3.9C2.6 8 1.4 8.8 1.3 9.8L0 21.1C-0.2 22.7 0.9 24 2.6 24h18.7c1.7 0 2.9-1.3 2.6-2.9L22.7 9.8C22.6 8.8 21.4 8 20.1 8L20.1 8z"
+                        ></path>
+                      </svg>
+                      <span class="text-slate-500 font-semibold">4</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 sm:p-8 bg-white shadow-md flex flex-col justify-center items-center gap-3 rounded-lg"
+                  >
+                    <div class="flex items-center gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        class="fill-blue-400"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M9 22l0 1L9 22zM23 23L23 23zM1.3 22.2l0.3-0.9L1.3 22.2C1.3 22.2 1.3 22.2 1.3 22.2zM16.3 21.2l0.3 0.9L16.3 21.2zM9 17l0 1L9 17zM4.1 13c0.4-2 2-3.6 4.1-3.9L9 8.9l0.8 0.1c2.1 0.3 3.7 1.9 4.1 3.9H4.1zM23 8c0-3.9-3.1-7-7-7 -3.9 0-7 3.1-7 7 0-3.9 3.1-7 7-7C19.9 1 23 4.1 23 8z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M9 10l0.7 0.1c1.2 0.2 2.2 0.9 2.8 1.9H5.5c0.6-1 1.6-1.7 2.8-1.9L9 10M16 0c-4.4 0-8 3.6-8 8 0 0 0 0.1 0 0.1C5.2 8.6 3 11 3 14h12c0-3-2.2-5.4-5-5.9V8c0-3.3 2.7-6 6-6 3.3 0 6 2.7 6 6v16h2V8C24 3.6 20.4 0 16 0L16 0zM14.3 15.6c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.7 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.7-0.9C15.1 15.8 14.7 15.6 14.3 15.6L14.3 15.6zM3.7 15.6c-0.4 0-0.8 0.3-0.9 0.7l-0.7 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.7-0.9c0.2-0.5-0.1-1.1-0.6-1.3C3.9 15.6 3.8 15.6 3.7 15.6L3.7 15.6zM9 16c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 16.5 9.6 16 9 16L9 16zM16.3 20.2c-0.1 0-0.2 0-0.3 0.1 -0.5 0.2-0.8 0.8-0.6 1.3l0.3 0.9c0.1 0.4 0.5 0.7 0.9 0.7 0.1 0 0.2 0 0.3-0.1 0.5-0.2 0.8-0.8 0.6-1.3l-0.3-0.9C17.1 20.5 16.7 20.2 16.3 20.2L16.3 20.2zM1.7 20.2c-0.4 0-0.8 0.3-0.9 0.7l-0.3 0.9c-0.2 0.5 0.1 1.1 0.6 1.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0 0.8-0.3 0.9-0.7l0.3-0.9c0.2-0.5-0.1-1.1-0.6-1.3C1.9 20.3 1.8 20.2 1.7 20.2L1.7 20.2zM9 21c-0.6 0-1 0.4-1 1v1c0 0.6 0.4 1 1 1 0.6 0 1-0.4 1-1v-1C10 21.5 9.6 21 9 21L9 21z"
+                        ></path>
+                      </svg>
+                      <span class="text-slate-500 font-semibold">4</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 sm:p-8 bg-white shadow-md flex flex-col justify-center items-center gap-3 rounded-lg"
+                  >
+                    <div class="flex items-center gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        class="fill-blue-400"
+                      >
+                        <path
+                          class="ultra-meta rh-ultra-light"
+                          d="M4.4 23L1 19.6v-1l4-2 4 2v1L5.6 23H4.4zM18.6 9l-2-4H5h11.6l2-4h1L23 4.4v1.2L19.6 9H18.6z"
+                        ></path>
+                        <path
+                          class="ultra-meta rh-ultra-dark"
+                          d="M19.2 2L22 4.8v0.3L19.2 8l-1.4-2.9L17.7 5l0.1-0.1L19.2 2M5 17.7l0.1 0.1L8 19.2 5.2 22H4.8L2 19.2l2.9-1.4L5 17.7M20 0h-2l-2 4H4v12l-4 2v2l4 4h2l4-4v-2l-4-2V6h10l2 4h2l4-4V4L20 0 20 0zM24 10h-2v2h2V10L24 10zM24 14h-2v2h2V14L24 14zM24 18h-2v2h2V18L24 18zM24 22h-2v2h2V22L24 22zM20 22h-2v2h2V22L20 22zM16 22h-2v2h2V22L16 22zM12 22h-2v2h2V22L12 22z"
+                        ></path>
+                      </svg>
+
+                      <div class="text-slate-600 sm:font-semibold">
+                        9350
+                        <span class="text-neutral-500 sm:font-semibold">
+                          sq ft</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pricing px-10 sm:flex sm:items-center my-8 gap-2">
+                <p
+                  class="text-2xl sm:text-4xl text-blue-400 font-bold inline-block sm:block"
+                >
+                  $4,750
+                </p>
+                <p
+                  class="text-slate-500 font-sans text-xl inline-block sm:block"
+                >
+                  / Monthly
+                </p>
+              </div>
+
+              <p class="text-sm font-semibold text-neutral-500 px-3 sm:px-0">
+                Spacious and fabulous home in prime location. This executive
+                style four bed, four bath home…
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
